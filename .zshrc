@@ -3,7 +3,7 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="refined"
+ZSH_THEME="agnoster"
 
 plugins=( 
     git
@@ -88,3 +88,8 @@ source ~/.config/yay/env
 export PATH=$PATH:~/.local/bin
 export LANG=en_US.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-bundle.crt
+# 添加到 shell 配置文件末尾
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
